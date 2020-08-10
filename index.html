@@ -156,27 +156,20 @@
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-2 pb-2">
                                 <label>Name</label>
-                                <input type="text" name="_replyto" placeholder="Name">
+                                <input type="text" name="_replyto" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
                             </div>
                         </div>
-                        <div class="divider-custom-line"></div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-2 pb-2">
                                 <label>Email</label>
-                                <input type="email" placeholder="Email">
+                                <input type="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address.">
                             </div>
-                        </div>
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-2 pb-2">
                                 <label>Message</label>
-                                <input type="text" rows="5" placeholder="Message">
+                                <input type="text" rows="5" placeholder="Message" required="required" data-validation-required-message="Please type a message.">
                             </div>
-                        </div>
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
                         </div>
                         <!-- your other form fields go here -->
                         <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
