@@ -150,58 +150,59 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Contact Section Form-->
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/vincenzo.r.delvillano@gmail.com" method="post">
-                        <fieldset id="fs-frm-inputs">
-                            <!--<label for="full-name"></label>-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/vincenzo.r.delvillano@gmail.com" method="post">
+                            <fieldset id="fs-frm-inputs">
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls mb-2 pb-2">
+                                        <label>Name</label>
+                                        <input type="text" name="Name" id="full-name" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls mb-2 pb-2">
+                                        <label>Email</label>
+                                        <input type="email" name="Email Address" id="email-address" placeholder="email@domain.tld" required="required" data-validation-required-message="Please include an email you can be contacted at.">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls mb-2 pb-2">
+                                        <label>Message</label>
+                                        <textarea rows="5" name="Message" id="message" placeholder="Write your message here." required="required" data-validation-required-message="Please include a message."></textarea>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                            </fieldset>
+                            <!--<input type="submit" value="Submit">-->
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                            <button type="submit">Send</button>
+                        </form>
+                        <!--<form action="https://formspree.io/vincenzo.r.delvillano@gmail.com" method="POST">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-2 pb-2">
                                     <label>Name</label>
-                                    <input type="text" name="Name" id="full-name" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                                    <input type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-2 pb-2">
-                                    <!--<label for="email-address">Email Address</label>-->
                                     <label>Email</label>
-                                    <input type="email" name="Email Address" id="email-address" placeholder="email@domain.tld" required="required" data-validation-required-message="Please include an email you can be contacted at.">
+                                    <input type="email" name="_replyto" placeholder="Email" required="required" data-validation-required-message="Please enter your email address.">
                                 </div>
                             </div>
-                            <!--<label for="message">Message</label>-->
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-2 pb-2">
                                     <label>Message</label>
-                                    <textarea rows="5" name="Message" id="message" placeholder="Write your message here." required="required" data-validation-required-message="Please include a message."></textarea>
+                                    <input type="text" rows="5" placeholder="Message" required="required" data-validation-required-message="Please type a message.">
                                 </div>
                             </div>
-                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                        </fieldset>
-                        <input type="submit" value="Submit">
-                    </form>
-                    <!--<form action="https://formspree.io/vincenzo.r.delvillano@gmail.com" method="POST">
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-2 pb-2">
-                                <label>Name</label>
-                                <input type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-2 pb-2">
-                                <label>Email</label>
-                                <input type="email" name="_replyto" placeholder="Email" required="required" data-validation-required-message="Please enter your email address.">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-2 pb-2">
-                                <label>Message</label>
-                                <input type="text" rows="5" placeholder="Message" required="required" data-validation-required-message="Please type a message.">
-                            </div>
-                        </div>
-                        <!-- your other form fields go here -->
-                        <!--<div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                        <!--<button type="submit">Send</button>-->
-                    <!--</form>-->
+                            <!-- your other form fields go here -->
+                            <!--<div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                            <!--<button type="submit">Send</button>-->
+                        <!--</form>-->
+                    </div>
                 </div>
             </div>
         </section>
