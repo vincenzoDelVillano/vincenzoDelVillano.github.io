@@ -152,10 +152,15 @@
             <!-- Contact Section Form-->
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <form action="https://formspree.io/vincenzo.r.delvillano@gmail.com" method="post">
-                      <input type="email" name="_replyto">
-                      <textarea name="body">Type your message here.</textarea>
-                      <input type="submit" value="Send">
+                    <form action="https://formspree.io/vincenzo.r.delvillano@gmail.com" method="POST">
+                        <label>
+                            Your email:<input type="text" name="_replyto">
+                        </label>
+                        <label>
+                            Your message:<textarea name="message"></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit">Send</button>
                     </form>
                 </div>
             </div>
