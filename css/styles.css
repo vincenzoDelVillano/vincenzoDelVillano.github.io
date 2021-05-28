@@ -10259,3 +10259,39 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+#exitModal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 10%;
+  height: 10%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+  text-align: center;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #fefefe;
+  width: 80%; 
+  background-color: #000;
+}
+
+.close {
+  color: #fefefe;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #d4ce46;
+  text-decoration: none;
+  cursor: pointer;
+}
