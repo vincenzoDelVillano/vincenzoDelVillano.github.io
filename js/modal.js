@@ -17,7 +17,7 @@ const exitEvent = (e) => {
 
 setTimeout(() => {
     document.addEventListener('mouseout', exitEvent);
-}, 15000);
+}, 1000);
 
 const exitEvent = e => {
   if (!e.toElement && !e.relatedTarget && e.clientY < 5) {
