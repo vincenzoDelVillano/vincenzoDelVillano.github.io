@@ -1,6 +1,6 @@
 const modal = document.getElementById("exitModal");
 
-const showOnce = false;
+localStorage.showOnce = "false";
 
 /*
 document.addEventListener('mouseout', e => {
@@ -12,13 +12,13 @@ document.addEventListener('mouseout', e => {
 
 const exitEvent = (e) => {
   if (!e.toElement && !e.relatedTarget) {
-    showOnce = true;
+    localStorage.showOnce = "true";
     document.removeEventListener('mouseout', exitEvent);
     modal.style.display = "none";
   }
 };
 
-if (!showOnce) {
+if (localStorage.showOnce == "false") {
     setTimeout(() => {
         document.addEventListener('mouseout', e => {
             if (!e.toElement && !e.relatedTarget) {
