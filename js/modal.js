@@ -1,5 +1,7 @@
 const modal = document.getElementById("exitModal");
 
+const showOnce = false;
+
 /*
 document.addEventListener('mouseout', e => {
     if (!e.toElement && !e.relatedTarget) {
@@ -11,18 +13,20 @@ document.addEventListener('mouseout', e => {
 const exitEvent = (e) => {
   if (!e.toElement && !e.relatedTarget) {
     document.removeEventListener('mouseout', exitEvent);
-    modal.style.display = "block";
+    modal.style.display = "none";
   }
 };
 
-setTimeout(() => {
-    document.addEventListener('mouseout', e => {
-        if (!e.toElement && !e.relatedTarget) {
-            modal.style.display = "block";
-        }
-    });
+if (!showOnce) {
+    setTimeout(() => {
+        document.addEventListener('mouseout', e => {
+            if (!e.toElement && !e.relatedTarget) {
+                modal.style.display = "block";
+            }
+        });
 
-}, 15000);
+    }, 15000);
+}
 
 window.onclick = (e) => {
   if (e.target === modal) {
