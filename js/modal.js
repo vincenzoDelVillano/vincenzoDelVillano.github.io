@@ -11,11 +11,11 @@ document.addEventListener('mouseout', e => {
 */
 
 const exitEvent = (e) => {
-  if (!e.toElement && !e.relatedTarget) {
+  //if (!e.toElement && !e.relatedTarget) {
     localStorage.showOnce = "true";
     document.removeEventListener('mouseout', exitEvent);
     modal.style.display = "none";
-  }
+  //}
 };
 
 if (localStorage.showOnce == "false") {
