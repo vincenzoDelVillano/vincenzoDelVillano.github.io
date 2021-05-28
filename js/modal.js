@@ -14,18 +14,13 @@ const exitEvent = (e) => {
   //if (!e.toElement && !e.relatedTarget) {
     localStorage.showOnce = "true";
     document.removeEventListener('mouseout', exitEvent);
-    modal.style.display = "none";
+    modal.style.display = "block";
   //}
 };
 
 if (localStorage.showOnce == "false") {
     setTimeout(() => {
-        document.addEventListener('mouseout', e => {
-            if (!e.toElement && !e.relatedTarget) {
-                modal.style.display = "block";
-            }
-        });
-
+        document.addEventListener('mouseout', exitEvent);
     }, 15000);
 }
 
