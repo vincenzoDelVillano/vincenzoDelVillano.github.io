@@ -10266,7 +10266,7 @@ form .row:first-child .floating-label-form-group {
   position: fixed;
   left: 0%;
   top: 0%;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   height: 100%;
   overflow: auto;
