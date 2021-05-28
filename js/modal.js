@@ -19,15 +19,6 @@ setTimeout(() => {
     document.addEventListener('mouseout', exitEvent);
 }, 1000);
 
-const exitEvent = e => {
-  if (!e.toElement && !e.relatedTarget && e.clientY < 5) {
-    document.removeEventListener('mouseout', exitEvent);
-    modal.style.display = "block";
-
-		setCookie('resumeModalSeen', true, 7);
-  }
-};
-
 span.onclick = () => {
   modal.style.display = "none";
 }
