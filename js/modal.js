@@ -1,10 +1,12 @@
 const modal = document.getElementById("exitModal");
 
+/*
 document.addEventListener('mouseout', e => {
     if (!e.toElement && !e.relatedTarget) {
         modal.style.display = "block";
     }
 });
+*/
 
 const exitEvent = (e) => {
   if (!e.toElement && !e.relatedTarget) {
@@ -14,7 +16,12 @@ const exitEvent = (e) => {
 };
 
 setTimeout(() => {
-    document.addEventListener('mouseout', exitEvent);
+    document.addEventListener('mouseout', e => {
+        if (!e.toElement && !e.relatedTarget) {
+            modal.style.display = "block";
+        }
+    });
+
 }, 15000);
 
 window.onclick = (e) => {
