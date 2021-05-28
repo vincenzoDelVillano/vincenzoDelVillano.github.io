@@ -12,6 +12,7 @@ document.addEventListener('mouseout', e => {
 
 const exitEvent = (e) => {
   if (!e.toElement && !e.relatedTarget) {
+    showOnce = true;
     document.removeEventListener('mouseout', exitEvent);
     modal.style.display = "none";
   }
