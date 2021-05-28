@@ -1,7 +1,5 @@
 const modal = document.getElementById("exitModal");
 
-const span = document.getElementsByClassName("close")[0];
-
 document.addEventListener('mouseout', e => {
     if (!e.toElement && !e.relatedTarget) {
         modal.style.display = "block";
@@ -17,11 +15,7 @@ const exitEvent = (e) => {
 
 setTimeout(() => {
     document.addEventListener('mouseout', exitEvent);
-}, 1000);
-
-span.onclick = () => {
-  modal.style.display = "none";
-}
+}, 15000);
 
 window.onclick = (e) => {
   if (e.target === modal) {
